@@ -180,6 +180,24 @@ section.full-screen {
     z-index: 3;
 }
 
+
+/* header */
+
+.logo--header {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.logo--header img {
+    width: 1159px;
+    height: 150px;
+    object-position: center;
+}
+
 /* navbar */
 
 .logo--1 {
