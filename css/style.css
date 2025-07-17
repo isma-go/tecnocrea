@@ -202,7 +202,7 @@ nav {
     left: 0;
     z-index: 2;
     background: var(--white);
-    border-bottom: solid 1px var(--blue-secondary);
+    border-bottom: solid 1px var(--neutral-gray3);
 }
 
 nav ul {
