@@ -200,11 +200,9 @@ nav {
     height: 72px;
     top: 0;
     left: 0;
-   
     z-index: 2;
     background: var(--white);
-    /* background: rgba(255, 255, 255, 0.12); */
-    backdrop-filter: blur(6px);
+    border-bottom: solid 1px var(--blue-secondary);
 }
 
 nav ul {
