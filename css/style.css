@@ -15,6 +15,9 @@ html, body {
     --neutral-gray5: #FEFEFE;
     --white: #fff;
     --black: #000;
+    --surface-1: #E7EAF5;
+    --surface-2: #D0D4E2;
+    --surface-3: #ABB3CE;
     --padding: 3.125vw 6.25vw;
 
     margin: 0;
@@ -311,7 +314,7 @@ section.service .text {
     flex-direction: column;
     justify-content: space-between;
     flex: 1;
-    background-color: var(--neutral-gray4);
+    background-color: var(--surface-1);
     background-size: 90px 90px;
     padding: 80px;
     box-shadow: 00px -25px 20px -10px rgba(0, 0, 0, 0.06);
@@ -479,11 +482,11 @@ section.service.service-research .text a {
 
 
 section.service.service-prototyping .text {
-    background-color: var(--neutral-gray3);
+    background-color: var(--surface-2);
 }
 
 section.service.service-research .text {
-    background-color: var(--neutral-gray2);
+    background-color: var(--surface-3);
 }
 
 /* solutions */
