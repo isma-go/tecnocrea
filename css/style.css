@@ -218,12 +218,12 @@ nav ul {
     width: 100%;
     height: 100%;
     margin: 0;
-    padding: 0;
+    padding: 24px;
 }
 
 nav ul li {
     list-style: none;
-    margin-left: 45px;
+    margin: 0 16px;
 }
 
 .nav__link {
@@ -236,6 +236,7 @@ nav ul li {
 
 .nav__link:hover, .nav__link.active {
     color: var(--blue-main); /* Changes color on hover */
+    font-weight: 600;
 }
 
 a.nav__link.call {
@@ -256,10 +257,10 @@ section.about {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
     padding: var(--padding);
+    height: 90vh;
+    top: 0;
+    gap: 32px;
 }
 
 section.about .header {
@@ -281,7 +282,7 @@ section.about article .title {
     display: flex;
     align-items: flex-start;
     background: var(--blue-main);
-    background-image: url("../img/pisos-encanto.png");
+    background-image: url("../img/pisos-encansto.png");
     background-size: cover;
     /* padding: var(--padding); */
     transition: flex-basis 1s cubic-bezier(0,.9,.4,.99);
