@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="css/style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <link rel="icon" href="img/favicon--ig-2.svg" type="image/svg+xml">
+        <script src="js/script.js"></script>
     </head>
 
 <!-- Navigation  -->
@@ -28,18 +29,18 @@
 <!-- main section -->
 
        <section id="inicio" class="about">
-            <div class="header">
-                <h1>Proyectos integrales de pisos de concreto, gestión de obra y acabados.</h1>
-            </div>
-            <article>
+            <div>
                 <div class="title">
-                    <div class="video-box">
-                        <video autoplay muted loop playsinline>
-                            <source src="img/intro-1.mp4" type="video/mp4"/>
-                          </video>
-                    </div> 
+                <h1>Proyectos integrales de pisos de concreto, gestión de obra y acabados.</h1>
                 </div>
-            </article>
+                <div class="empty">
+                </div>
+            </div>
+            <div class="video-box">
+                <video autoplay muted loop playsinline>
+                    <source src="img/intro-1.mp4" type="video/mp4"/>
+                </video>
+            </div> 
        </section> 
 
 <!-- secondary content  -->
@@ -303,66 +304,5 @@
                 </a>
             </div>
         </section>
-
-        <script>
-
-            let emptyElement = document.querySelector('.about .header');
-            let titleElement = document.querySelector('.about .title');
-
-            let figureElements = document.querySelectorAll('.service figure');
-
-            window.addEventListener( 'mousemove', handleMouseMove);
-
-            function handleMouseMove( event ) {
-
-                emptyElement.style.flexBasis = event.clientX + 'px';
-                titleElement.style.flexBasis = event.clientY / 3 + 'px';
-
-                figureElements.forEach( function( element ) {
-                    element.style.flexBasis = (window.innerWidth - event.clientX) + 'px';
-                } );
-            }
-
-        </script>
-        <script>
-            const horizontalScroll = document.querySelector('.horizontal-scroll');
-            const scrollTrack = document.querySelector('.scroll-track');
-          
-            window.addEventListener('scroll', () => {
-              const sectionTop = horizontalScroll.offsetTop;
-              const scrollY = window.scrollY;
-              const sectionHeight = horizontalScroll.offsetHeight;
-              const scrollDistance = scrollY - sectionTop;
-          
-              if (scrollY >= sectionTop && scrollY <= sectionTop + sectionHeight) {
-                scrollTrack.style.transform = `translateX(-${scrollDistance}px)`;
-              }
-            });
-
-            // scroll
-
-            let sections = document.querySelectorAll('section');
-            let navLinks = document.querySelectorAll('.nav__link');
-
-            window.onscroll = () => {
-                sections.forEach(sec => {
-                    let top = window.scrollY;
-                    let offset = sec.offsetTop - 70;
-                    let height = sec.offsetHeight;
-                    let id = sec.getAttribute ('id');
-
-                    if(top >= offset && top < offset + height) {
-                        navLinks.forEach(links => {
-                            links.classList.remove('active');
-                            document.querySelector('.nav__link[href*=' + id + ']').classList.add('active');
-                        });
-                    };
-                });
-            };
-          </script>
-          
-      
-          
-
     </body>
 </html>
