@@ -310,6 +310,7 @@ overflow: hidden;
 section.service article {
     display: flex;
     width: 100%;
+    box-shadow: 00px -25px 20px -10px rgba(0, 0, 0, 0.06);
 }
 
 section.service figure {
@@ -334,7 +335,6 @@ section.service .text {
     background-color: var(--surface-1);
     background-size: 90px 90px;
     padding: 80px;
-    box-shadow: 00px -25px 20px -10px rgba(0, 0, 0, 0.06);
     font-family: "Inter", sans-serif;
     color: var(--neutral-black1);
 }
