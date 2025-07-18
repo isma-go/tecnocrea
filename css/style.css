@@ -229,7 +229,7 @@ nav ul li {
 }
 
 .nav__link {
-    color: #333;
+    color: var(--neutral-gray1);
     font-family: "Inter", sans-serif;
     font-size: 16px;
     scroll-behavior: smooth; /* Enables smooth scrolling */
