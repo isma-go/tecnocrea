@@ -94,11 +94,12 @@ button {
     padding: 16px;
     justify-content: center;
     align-items: center;
-    border-radius: 40px;
+    border-radius: 8px;
     background: var(--neutral-gray1);
     color: var(--white);
     border: none;
     z-index: 1;
+    gap: 8px;
 }
 
 button:hover {
@@ -117,8 +118,8 @@ button:hover {
 }
 
 svg {
-    width: 18px;
-    height: 18px;
+    width: 24px;
+    height: 24px;
     margin-right: 8px;
 }
 
