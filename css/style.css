@@ -634,6 +634,10 @@ hr.divider--footer {
     height: fit-content;
 }
 
+.lower-side a {
+    width: 100%;
+}
+
 svg.logo-footer {
     width: 100%;
     height: auto;
