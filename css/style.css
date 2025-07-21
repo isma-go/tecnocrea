@@ -598,6 +598,19 @@ section.contact {
     height: 100%;
 }
 
+.info-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.info-right {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+
 hr.divider--footer {
     width: 100%;
     border-top: .25px solid var(--neutral-gray5);
