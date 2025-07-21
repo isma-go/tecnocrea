@@ -641,6 +641,10 @@ hr.divider--footer {
     margin-bottom: 0;
 }
 
+.logo-footer svg {
+    width: 100%;
+}
+
 .logo-footer:hover {
     fill: var(--neutral-gray3);
 }
