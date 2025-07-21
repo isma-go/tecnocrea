@@ -594,6 +594,11 @@ section.contact {
     gap: 32px;
 }
 
+.divider--footer {
+    width: 100%;
+    border-top: 1px solid var(--neutral-gray5);
+}
+
 .claim-2 {
     color: var(--neutral-gray4);
     font-weight: 300;
