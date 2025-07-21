@@ -624,6 +624,7 @@ hr .divider--footer {
 .logo-footer {
     fill: var(--neutral-gray1);
     transition: fill 1s cubic-bezier(.17,.67,.76,.72);
+    width: 100%;
 }
 
 .logo-footer:hover {
