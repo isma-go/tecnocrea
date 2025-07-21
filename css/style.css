@@ -634,15 +634,13 @@ hr.divider--footer {
     height: fit-content;
 }
 
-.logo-footer {
+svg.logo-footer {
+    width: 100%;
+    height: auto;
     fill: var(--neutral-gray1);
     transition: fill 1s cubic-bezier(.17,.67,.76,.72);
     width: 100%;
     margin-bottom: 0;
-}
-
-.logo-footer svg {
-    width: 100%;
 }
 
 .logo-footer:hover {
