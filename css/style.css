@@ -598,7 +598,7 @@ section.contact {
     height: 100%;
 }
 
-hr .divider--footer {
+hr.divider--footer {
     width: 100%;
     border-top: .25px solid var(--neutral-gray5);
 }
@@ -625,6 +625,7 @@ hr .divider--footer {
     fill: var(--neutral-gray1);
     transition: fill 1s cubic-bezier(.17,.67,.76,.72);
     width: 100%;
+    margin-bottom: 0;
 }
 
 .logo-footer:hover {
@@ -692,12 +693,6 @@ hr .divider--footer {
 .cont-info ul li a:hover {
     color: var(--blue-main); /* Changes color on hover */
 }
-
-.logo-footer {
-    position: relative;
-    margin-bottom: 0;
-}
-
 
 .p-1 {
     font-size: 24px;
