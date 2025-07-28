@@ -359,6 +359,13 @@ strong {
     line-height: 1.2em;
 }
 
+.services--title {
+    padding: 3.125vw 6.25vw;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
 /* claim */
 
 .offer {
