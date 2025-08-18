@@ -86,7 +86,25 @@ a {
 }
 
 p {
+    font-size: 24px;
     margin: 0px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1.5em;
+    color: var(--neutral-black1);
+}
+
+p > strong {
+    font-weight: 600;
+}
+
+hr {
+    width: 100%;
+    border: none;
+    border-top: 1px solid var(--neutral-gray3);
+    margin: 16px 0;
 }
 
 button {
@@ -208,7 +226,7 @@ nav {
     display: flex;
     flex-direction: row;
     position: fixed;
-    width: 310px;
+    width: 420px;
     height: 72px;
     top: 1.56vw;
     left: 1.56vw;
@@ -250,14 +268,20 @@ nav ul li {
   font-weight: 600;
 }
 
+/* break */
+.break {
+    position: relative;
+    width: 100%;
+    height: 10vh;
+}
 
-/* hello section */
+/* proceso */
 .section {
     position: relative;
     height: 300vh;
 }
 
-.sticky-container {
+.sticky-container-0 {
     position: sticky;
     top: 0;
     display: flex;
@@ -266,13 +290,12 @@ nav ul li {
     box-sizing: border-box;
     overflow: hidden;
     width: 100%;
-    height: 33%;
 }
 
 .img--wrapperbg {
     height: fit-content;
     width: 100%;
-    background-image: url(https://conceptconcrete.com.au/wp-content/uploads/2024/07/What-is-the-slab-construction-process-in-Melbourne_-01.jpg);
+    background-image: url("../img/proceso-tecnocrea.jpeg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -314,7 +337,7 @@ nav ul li {
 
 .title {
     position: relative;
-    margin-top: 12vh;
+    margin: 12vh 0 3vh;
     display: flex;
     align-items: center;
     padding: 3.125vw 6.25vw;
@@ -325,12 +348,13 @@ nav ul li {
     font-weight: 700;
     color: #333;
     flex: 1 0 0;
+    padding-right: 24px;
 }
 
 .claim--services {
     font-size: 1.25rem;
     font-weight: 300;
-    color: #666;
+    color: #595959;
     flex: 1 0 0;
 }
 
@@ -431,7 +455,7 @@ strong {
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
-    font-size: 20px;
+    font-size: 24px;
     line-height: 1.2em;
 }
 
@@ -481,11 +505,11 @@ strong {
   
 .sticky-container {
     position: sticky;
-    top: 0;
+    top: 15vh;
     height: 100vh;
     overflow: hidden;
     display: flex;
-    align-items: center;
+    
 }
 
 .scroll-track {
@@ -505,18 +529,26 @@ strong {
     align-items: center;
 }
 
-figure.panel-1 {
-    width: 337px;
-    height: 463px;
-    background-image: url("../img/proyecto-1.JPG");
+figure.panel-1, .panel-2, .panel-3, .panel-4, .panel-5 {
+    width: 430px;
+    height: 560px;
     background-size: cover;
 }
 
+figure.panel-1 {
+   background-image: url("../img/proyecto-1.JPG");
+}
+
 figure.panel-2 {
-    width: 337px;
-    height: 463px;
     background-image: url("../img/P38F2.jpg");
-    background-size: cover;
+}
+
+figure.panel-3 {
+    background-image: url("../img/experiencia_02.jpg");
+}
+
+figure.panel-4 {
+    background-image: url("../img/servicios--1.jpg");
 }
 
 .project-info {
@@ -524,7 +556,7 @@ figure.panel-2 {
     flex-direction: column;
     gap: 8px;
     padding: 8px;
-    width: 337px;
+    width: 430px;
 }
   
 
@@ -630,8 +662,8 @@ section.solutions {
 
 .grid-solutions {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 6.25vw;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 6px;
 }
 
 .solution {
@@ -820,6 +852,11 @@ svg.logo-footer {
     margin-bottom: 0;
     padding: 0 6.125vw 0 37.5vw;
     height: 30vh;
+}
+
+.p-1 strong {
+    font-weight: 600;
+    font-size: 24px;
 }
 
 /* responsive */
