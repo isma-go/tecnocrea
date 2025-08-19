@@ -871,6 +871,10 @@ svg.logo-footer {
     p.font-giga {
         font-size: 90px;
     }
+
+    p, p > strong {
+        font-size: 20px;
+    }
 }
 
 @media only screen and (max-width: 768px){
@@ -888,19 +892,19 @@ svg.logo-footer {
         font-size: 24px;
     }
 
+    h4 {
+        font-size: 20px;
+    }
+
     p.font-giga {
         font-size: 64px;
         font-weight: 600;
         line-height: .9em;
     }
 
-    nav ul {
-        padding: 0 6.125vw;
+    nav.hide {
+        display: none;
     }
-
-    nav ul li {
-        margin: 0 16px 0 0;
-    } 
 
     section.about .header {
         flex-basis: 12vw;
@@ -933,6 +937,34 @@ svg.logo-footer {
     .claim-2 {
         font-size: 56px;
     }
+
+    section.service .text {
+        padding: 40px 20px;
+        gap: 32px;
+    }
+
+    .title {
+        margin: 3.125vh 0;
+        padding: 3.125vw 6.25vw;
+    }
+
+    .claim--services {
+        flex: 2 0 0;
+    }
+
+    .sticky-container {
+        top: 0;
+    }
+
+    figure.panel-1, .panel-2, .panel-3, .panel-4, .panel-5 {
+        width: 370px;
+        height: 500px;
+    }
+
+    .project-info {
+        width: 370px;
+    }
+
 }
 
 @media all and (max-width: 610px) {
@@ -967,17 +999,52 @@ svg.logo-footer {
         font-size: 32px;
     }
 
-    nav ul {
+    p, p > strong {
+        font-size: 16px;
+    }
+
+    .title {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .bg--image {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .box {
+        width: 100%;
+        padding-bottom: 32px;
+    }  
+    
+    .box > h4 {
+        margin-bottom: 32px;
+    }
+
+    .cont-info {
+        flex-direction: column;
+    }
+
+    .info-left { 
+        order: 2; 
+    }
+
+    .info-right { 
+        order: 1; 
+    }
+
+    .btn-icon {
         display: none;
     }
 
+    .grid-solutions {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
 }
 
 @media all and (max-width: 370px) {
 
-    .hide {
-        display: none;
-    }
 
     p.font-giga {
         font-size: 40px;
