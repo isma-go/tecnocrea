@@ -642,9 +642,6 @@ section.service.service-prototyping .text {
 section.service.service-research .text {
     background-color: var(--neutral-gray5);
     border: var(--neutral-gray3) solid .25px;
-    background-color: var(--surface-2);
-}
-
 }
 
 /* solutions */
