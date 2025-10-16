@@ -5,6 +5,7 @@
 html, body {
     --border-radius: 80px;
     --blue-main: #1c47ff;
+    --orange-main: #DE8A25;
     --blue-secondary: #2C4284;
     --blue-terciary: #56689D;
     --neutral-black1: #333333;
@@ -44,10 +45,10 @@ html, body {
 h1 {
     font-family: "Sora", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 300;
+    font-weight: 400;
     font-style: normal;
-    font-size: 56px;
-    line-height: 1.2em;
+    font-size: 120px;
+    line-height: 1em;
     margin: 0px;
 }
 
@@ -217,7 +218,7 @@ section.full-screen {
 }
 
 .logo--header img {
-    height: 6vw;
+    height: 5vw;
     object-position: center;
 }
 
@@ -261,7 +262,7 @@ nav ul li {
 
 .nav__link:hover,
 .nav__link.active {
-  color: var(--blue-main);
+  color: var(--orange-main);
 }
 
 .nav__link.active {
@@ -273,7 +274,6 @@ nav ul li {
     position: relative;
     width: 100%;
     height: 10vh;
-    background-color: #fff;
 }
 
 /* proceso */
@@ -345,6 +345,19 @@ nav ul li {
     padding: 3.125vw 6.25vw;
 }
 
+.title-2 {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background: var(--neutral-gray5);
+    padding: 3.125vw 6.25vw;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    border-top: var(--neutral-gray4) solid 1px;
+    z-index: 2;
+}
+
 .titolo--services {
     font-size: 2.5rem;
     font-weight: 700;
@@ -366,7 +379,7 @@ section.about {
     flex-direction: column;
     align-items: center;
     padding: 0;
-    height: 90vh;
+    height: fit-content;
     top: 0;
     gap: 32px;
 }
@@ -498,11 +511,19 @@ strong {
 }
 
 /* proyects */
-  
+
+.solutions-container {
+    position: relative;
+    height: fit-content;
+    width: 100%;
+}
+
 .horizontal-scroll {
     position: relative;
     --slide-count: 5;
     height: calc(50vh * var(--slide-count));
+    background: var(--neutral-gray5);
+    border-bottom: var(--neutral-gray4) solid 1px;
 }
   
 .sticky-container {
@@ -535,26 +556,28 @@ figure.panel-1, .panel-2, .panel-3, .panel-4, .panel-5 {
     width: 430px;
     height: 560px;
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 figure.panel-1 {
-   background-image: url("../img/proyecto-1.JPG");
+   background-image: url("../img/solucion--1.png");
 }
 
 figure.panel-2 {
-    background-image: url("../img/P38F2.jpg");
+    background-image: url("../img/solucion--2.jpg");
 }
 
 figure.panel-3 {
-    background-image: url("../img/4-PISOS\ NAVE-OBRA\ METACERC.jpg");
+    background-image: url("../img/junta-4.png");
 }
 
 figure.panel-4 {
-    background-image: url("../img/CIVAC-cuernavaca_pulido.jpg");
+    background-image: url("../img/solucion--4.png");
 }
 
 figure.panel-5 {
-    background-image: url("../img/colusa-comercial_1.jpeg");
+    background-image: url("../img/solucion--5.jpeg");
 }
 
 .project-info {
@@ -655,7 +678,8 @@ section.service.service-research .text {
 section.solutions {
     display: flex;
     height: fit-content;
-    margin-bottom: 200px;
+    margin: 12.5vw 0;
+    
 }
 
 .container-solutions {
@@ -672,17 +696,41 @@ section.solutions {
     gap: 6px;
 }
 
+.grid-solutions-1 {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    gap: 6px;
+    overflow: hidden;
+}
+
 .solution {
     display: flex;
     flex-direction: column;
     background: var(--neutral-gray4);
-    height: 360px;
+    height: 700px;
+    position: relative;
+    flex: 1 1 0;
+    overflow: hidden;
+    transition: flex 0.45s cubic-bezier(.2,.7,0,1);
 }
 
 .info {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
     display: flex;
     flex-direction: column;
-    margin: 16px;
+    gap: 6px;
+    padding: 24px;
+    margin: 0;
+    color: var(--white);
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,.55) 60%, rgba(0,0,0,.75) 100%);
+    transform: translateY(40%);
+    opacity: 0;
+    z-index: 1;
+    transition: transform .35s ease, opacity .35s ease;
 }
 
 .info p {
@@ -690,30 +738,60 @@ section.solutions {
 }
 
 .solution-img1, .solution-img2, .solution-img3, .solution-img4, .solution-img5 {
+    position: absolute;
+    inset: 0;
     background-position: center;
     background-size: cover;
     height: 100%;
     margin: 0;
+    transition: transform .6s ease;
 }
 
 .solution-img1 {
-    background-image: url("../img/solucion--1.png");
+    background-image: url("../img/pisos-encanto.JPG");
 }
 
 .solution-img2 {
-    background-image: url("../img/solucion--2.jpg");
+    background-image: url("../img/higa_2.jpg");
 }
 
 .solution-img3 {
-    background-image: url("../img/junta-1.png");
+    background-image: url("../img/4-PISOS\ NAVE-OBRA\ METACERC.jpg");
 }
 
 .solution-img4 {
-    background-image: url("../img/solucion--4.png");
+    background-image: url("../img/CIVAC-cuernavaca_pulido.jpg");
 }
 
 .solution-img5 {
-    background-image: url("../img/solucion--5.jpeg");
+    background-image: url("../img/colusa-comercial_1.jpeg");
+}
+
+/* interactive expand behavior for portfolio-like grid */
+.grid-solutions-1:hover .solution {
+    flex: .9 1 0;
+}
+
+.grid-solutions-1 .solution:hover {
+    flex: 3 1 0;
+}
+
+.grid-solutions-1 .solution:hover .solution-img1,
+.grid-solutions-1 .solution:hover .solution-img2,
+.grid-solutions-1 .solution:hover .solution-img3,
+.grid-solutions-1 .solution:hover .solution-img4,
+.grid-solutions-1 .solution:hover .solution-img5 {
+    transform: scale(1.05);
+}
+
+.grid-solutions-1 .solution:hover .info {
+    transform: translateY(0%);
+    opacity: 1;
+}
+
+.grid-solutions-1 .solution .info h3,
+.grid-solutions-1 .solution .info span {
+    color: var(--white);
 }
 
 /* contact section */
@@ -726,6 +804,7 @@ section.contact {
     justify-content: space-between;
     margin: 0;
     background: var(--neutral-black1);
+    z-index: 5;
     
 }
 
@@ -850,14 +929,16 @@ svg.logo-footer {
 }
 
 .cont-info ul li a:hover {
-    color: var(--blue-main); /* Changes color on hover */
+    color: var(--orange-main); /* Changes color on hover */
 }
 
 .p-1 {
+    position: relative;
     font-size: 24px;
-    margin-bottom: 0;
-    padding: 0 6.125vw 0 37.5vw;
-    height: 30vh;
+    padding: 6.125vw 6.125vw 12.25vw 37.5vw;
+    height: fit-content;
+    background-color: var(--neutral-gray5);
+    z-index: 4;
 }
 
 .p-1 strong {
@@ -952,6 +1033,10 @@ svg.logo-footer {
     .title {
         margin: 3.125vh 0;
         padding: 3.125vw 6.25vw;
+    }
+
+    .bg--white {
+        background: var(--neutral-gray5);
     }
 
     .claim--services {
@@ -1069,3 +1154,23 @@ svg.logo-footer {
     }
 }
 
+/* responsive fallback for expanding grid */
+@media (hover: none), (max-width: 900px) {
+    .grid-solutions-1 {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 6px;
+        overflow: visible;
+    }
+
+    .grid-solutions-1 .solution {
+        height: 420px;
+        flex: unset;
+    }
+
+    .grid-solutions-1 .solution .info {
+        transform: translateY(0);
+        opacity: 1;
+        background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,.45) 50%, rgba(0,0,0,.65) 100%);
+    }
+}
