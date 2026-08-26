@@ -1,423 +1,379 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <Title>Tecnocrea</Title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/style.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-        <link rel="icon" href="img/favicon--ig-2.svg" type="image/svg+xml">
-        <!-- <script src="js/script.js"></script> -->
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tecnocrea - Especialistas en proyectos integrales de pisos de concreto, gestión de obra y acabados de alta durabilidad en México.">
+    <meta name="theme-color" content="#1c47ff">
+    <title>Tecnocrea | Pisos de Concreto y Acabados Especializados</title>
 
-<!-- Navigation  -->
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <body>
-        <div id="inicio" class="logo--header">
-            <img src="img/Logo-2025.svg" alt="Logo">
-        </div>
-        <!-- <nav class="hide">
-            <ul>
-                <li><a class="nav__link" href="#inicio">Inicio</a></li>
-                <li><a class="nav__link" href="#nosotros">Nosotros</a></li>
-                <li><a class="nav__link" href="#soluciones">Soluciones</a></li>
-                <li><a class="nav__link" href="#contacto">Contacto</a></li>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon--ig-2.svg" type="image/svg+xml">
+
+    <!-- Deferred script -->
+    <script src="js/script.js" defer></script>
+</head>
+
+<body id="top">
+    <!-- Floating Header & Navigation -->
+    <header class="header">
+        <nav class="nav" aria-label="Navegación principal">
+            <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link active" href="#inicio">Inicio</a></li>
+                <li class="nav__item"><a class="nav__link" href="#nosotros">Nosotros</a></li>
+                <li class="nav__item"><a class="nav__link" href="#proceso">Proceso</a></li>
+                <li class="nav__item"><a class="nav__link" href="#proyectos">Proyectos</a></li>
+                <li class="nav__item"><a class="nav__link" href="#soluciones">Soluciones</a></li>
+                <li class="nav__item"><a class="nav__link" href="#contacto">Contacto</a></li>
             </ul>
-        </nav> -->
+        </nav>
 
-<!-- hero -->
-
-       <section id="inicio" class="about">
-            <div>
-                <div class="title">
-                <h1>Proyectos integrales de pisos de concreto, gestión de obra y acabados.</h1>
-                </div>
-                <div class="empty">
-                </div>
-            </div>
-            <div class="video-box">
-                <video autoplay muted loop playsinline>
-                    <source src="img/intro-1.mp4" type="video/mp4"/>
-                </video>
-            </div> 
-       </section> 
-
-<!-- break -->
-       <div class="break"></div>
-
-<!-- secondary content  -->
-    <div id="nosotros" class="services--full">
-        <div class="scroll__sticky-services">
-            <div class="sticky--wrapper">
-                <div class="services--wrapper">
-                    <section class="service service-strategy sticky">
-                        <article>
-                            <figure>
-                            </figure>
-                            <div class="text">
-                                <h2>¿Quiénes somos?</h2>
-                                <div class="text--service"> 
-                                <p>
-                                    <strong>Somos especialistas en pisos de concreto y acabados profesionales.</strong>
-                                    <br>
-                                    En Tecnocrea diseñamos, gestionamos y ejecutamos soluciones de alta durabilidad para pisos de concreto, adaptándonos a las exigencias de cada sector: <strong>industrial, comercial y residencial.</strong>
-                                </p>
-                                </div> 
-                            </div>
-                        </article>
-                    </section>
-                    <!-- --- -->
-                    <section class="service service-prototyping sticky">
-                        <article>
-                            <figure class="proyecto-bg1">
-                            </figure>
-                            <div class="text">
-                                <h2>Nuestra tecnología</h2>
-                                <div class="text--service">
-                                    <p>
-                                    <strong>Trabajamos con equipo de última generación y materiales de alta tecnología</strong> para garantizar resultados que ayuden a prolongar la vida útil de tus pisos. Combinamos talento mexicano con tecnología de vanguardia para ofrecer soluciones innovadoras y adaptadas a cada cliente.
-                                    </p>
-                                </div>
-                            </div>
-                        </article>
-                    </section>
-                    <!-- --- -->
-                    <section class="service service-research sticky">
-                        <article>
-                            <figure>
-                            </figure>
-                            <div class="text">
-                                <h2>Nuestra experiencia</h2>
-                                <div class="text--service">
-                                    <div class="text--service">  
-                                        <p>
-                                        <strong>Con los pies en el “piso” contamos con más de 20 años construyendo calidad en concreto.</strong>
-                                        <br>
-                                        En Tecnocrea somos expertos en la capacitación e integración de equipos de trabajo para la ejecución de funciones operativas y administrativas en cada proceso de tu proyecto.
-                                        </p>
-                                </div>
-                            </div>
-                        </article>
-                    </section>
-                </div>
-            </div>
+        <div class="logo--header">
+            <a href="#inicio" aria-label="Tecnocrea - Ir al inicio">
+                <img src="img/Logo-2025.svg" alt="Logotipo Tecnocrea" width="180" height="45">
+            </a>
         </div>
-    </div>
+    </header>
 
-<!-- break -->
-       <div class="break"></div>
+    <main>
+        <!-- Hero Section -->
+        <section id="inicio" class="about" aria-label="Presentación Tecnocrea">
+            <div class="hero-content">
+                <div class="title hero-title">
+                    <h1>Proyectos integrales de pisos de concreto, gestión de obra y acabados.</h1>
+                </div>
+            </div>
+            <div class="video-box" aria-hidden="true">
+                <video autoplay muted loop playsinline poster="img/proba-02.jpg">
+                    <source src="img/intro-1.mp4" type="video/mp4">
+                    Tu navegador no soporta el formato de video.
+                </video>
+            </div>
+        </section>
 
-<!-- proceso -->
-       <div class="section" id="scrollSection">
+        <!-- Section Spacer -->
+        <div class="break" aria-hidden="true"></div>
+
+        <!-- Sticky Stack: Nosotros -->
+        <section id="nosotros" class="services--full" aria-label="Sobre Nosotros">
+            <div class="scroll__sticky-services">
+                <div class="sticky--wrapper">
+                    <div class="services--wrapper">
+                        <!-- Card 1 -->
+                        <article class="service service-strategy sticky">
+                            <div class="service-card">
+                                <figure class="service-figure" style="background-image: url('img/servicios--2.png');" aria-label="Pisos industriales y comerciales"></figure>
+                                <div class="text">
+                                    <h2>¿Quiénes somos?</h2>
+                                    <div class="text--service">
+                                        <p>
+                                            <strong>Somos especialistas en pisos de concreto y acabados profesionales.</strong>
+                                            <br><br>
+                                            En Tecnocrea diseñamos, gestionamos y ejecutamos soluciones de alta durabilidad para pisos de concreto, adaptándonos a las exigencias de cada sector: <strong>industrial, comercial y residencial.</strong>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Card 2 -->
+                        <article class="service service-prototyping sticky">
+                            <div class="service-card">
+                                <figure class="service-figure" style="background-image: url('img/CIVAC-cuarnava_colado.jpg');" aria-label="Tecnología de colado de concreto"></figure>
+                                <div class="text">
+                                    <h2>Nuestra tecnología</h2>
+                                    <div class="text--service">
+                                        <p>
+                                            <strong>Trabajamos con equipo de última generación y materiales de alta tecnología</strong> para garantizar resultados que ayuden a prolongar la vida útil de tus pisos.
+                                            <br><br>
+                                            Combinamos talento mexicano con tecnología de vanguardia para ofrecer soluciones innovadoras y adaptadas a cada cliente.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Card 3 -->
+                        <article class="service service-research sticky">
+                            <div class="service-card">
+                                <figure class="service-figure" style="background-image: url('img/2-PIS0%20PULIDO-NAVE%20BARDHAL-SN%20PEDRO.png');" aria-label="Piso pulido industrial"></figure>
+                                <div class="text">
+                                    <h2>Nuestra experiencia</h2>
+                                    <div class="text--service">
+                                        <p>
+                                            <strong>Con los pies en el “piso”, contamos con más de 20 años construyendo calidad en concreto.</strong>
+                                            <br><br>
+                                            En Tecnocrea somos expertos en la capacitación e integración de equipos de trabajo para la ejecución de funciones operativas y administrativas en cada fase de tu proyecto.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Spacer -->
+        <div class="break" aria-hidden="true"></div>
+
+        <!-- Proceso Tecnocrea -->
+        <section id="proceso" class="section process-section" aria-label="El proceso Tecnocrea">
             <div class="sticky-container-0">
-                <div class="title">
-                    <div class="titolo--services"><h2>El proceso Tecnocrea</h2></div>
-                    <div class="claim--services"><p>Cada proyecto es único. Por eso, diseñamos estrategias personalizadas para cada uno de ellos. Tecnocrea te acompaña y te ofrece ventajas durante cada fase del proyecto.</p></div>
+                <div class="title process-header">
+                    <div class="titolo--services">
+                        <h2>El proceso Tecnocrea</h2>
+                    </div>
+                    <div class="claim--services">
+                        <p>Cada proyecto es único. Diseñamos estrategias personalizadas con acompañamiento integral y ventajas tangibles en cada fase.</p>
+                    </div>
                 </div>
                 <div class="img--wrapperbg">
-                <div class="bg--image">
-                    <div class="box" data-index="0">
-                        <h4>Diseño y planificación</h4>
-                        <span>Selección de materiales de alta tecnología</span>
-                        <hr>
-                        <span>Planificación y gestión de obra</span>
-                        <hr>
-                        <span>Formación de equipos de trabajo especializados</span>
+                    <div class="bg--image">
+                        <div class="box" data-index="0">
+                            <span class="box-step-number">01</span>
+                            <h3>Diseño y planificación</h3>
+                            <ul class="process-list">
+                                <li>Selección de materiales de alta tecnología</li>
+                                <hr>
+                                <li>Planificación y gestión de obra</li>
+                                <hr>
+                                <li>Formación de equipos especializados</li>
+                            </ul>
+                        </div>
+                        <div class="box" data-index="1">
+                            <span class="box-step-number">02</span>
+                            <h3>Ejecución y supervisión</h3>
+                            <ul class="process-list">
+                                <li>Suministro integral de materiales</li>
+                                <hr>
+                                <li>Supervisión técnica continua</li>
+                                <hr>
+                                <li>Uso de tecnología de última generación</li>
+                            </ul>
+                        </div>
+                        <div class="box" data-index="2">
+                            <span class="box-step-number">03</span>
+                            <h3>Entrega</h3>
+                            <ul class="process-list">
+                                <li>Riguroso control de calidad</li>
+                                <hr>
+                                <li>Acabados y sellados especializados</li>
+                                <hr>
+                                <li>Entrega puntual en los tiempos estipulados</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="box" data-index="1">
-                        <h4>Ejecución y supervisión</h4>
-                        <span>Suministro de materiales </span>
-                        <hr>
-                        <span>Supervisión continua</span>
-                        <hr>
-                        <span>Uso de tecnología de última generación</span>
-                    </div>
-                    <div class="box" data-index="2">
-                        <h4>Entrega</h4>
-                        <span>Control de calidad</span>
-                        <hr>
-                        <span>Acabados especializados</span>
-                        <hr>
-                        <span>Entrega de obra en los tiempos estipulado</span>
-                    </div>
-                </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-    
-
-    <!-- offer -->
-    <article class="offer offer-claim">
-        <div class="text big">  
-            <p class="font-giga uno">HABLEMOS</p>
-            <p class="font-giga due">EN CONCRETO</p>
-            <p class="font-giga tre">TECNOCREA</p>
-            <p class="font-giga quattro">ES CALIDAD</p>
-        </div>
-    </article>
-
-    
-    <section id="soluciones" class="solutions">
-        <div class="container-solutions">
-            <div class="heading-container">
-                <h2>Algunos de nuestros proyectos</h2>
+        <!-- Brand Claim Banner -->
+        <aside class="offer offer-claim" aria-label="Valores de marca">
+            <div class="text big">
+                <p class="font-giga uno">HABLEMOS</p>
+                <p class="font-giga due">EN CONCRETO</p>
+                <p class="font-giga tre">TECNOCREA</p>
+                <p class="font-giga quattro">ES CALIDAD</p>
             </div>
-            <div class="grid-solutions-1">
-                <div class="solution">
-                    <div class="info">
-                        <h3>Obra Pisos Encanto</h3>
-                        <span>Estado de México</span>
-                        <span>2019</span>
-                    </div>
-                    <figure class="solution-img1"></figure>
-                </div>
-                <div class="solution">
-                    <div class="info">
-                        <h3>Nave industrial Embalajes Duna</h3>
-                        <span>Estado de México</span>
-                        <span>2014</span>
-                    </div>
-                    <figure class="solution-img2"></figure>
-                </div>
-                <div class="solution">
-                    <div class="info">
-                        <h3>Nave industrial Metacerc</h3>
-                        <span>Cuernavaca, Morelos</span>
-                        <span>2019</span>
-                    </div>
-                    <figure class="solution-img3"></figure>
-                </div>
-                <div class="solution">
-                    <div class="info">
-                        <h3>Planta nueva Degasa</h3>
-                        <span>Cuernavaca, Morelos</span>
-                        <span>2022</span>
-                    </div>
-                    <figure class="solution-img4"></figure>
-                </div>
-                <div class="solution">
-                    <div class="info">
-                        <h3>Planta COLUSA Comercial</h3>
-                        <span>Estado de México</span>
-                        <span>2019</span>
-                    </div>
-                    <figure class="solution-img5"></figure>
-                </div>
-            </div>
-        </div>
-    </section>
+        </aside>
 
-    <!-- soluciones -->
-
-    <div class="title-2"><h2>Soluciones Tecnocrea</h2></div>
-    <section id="proyectos" class="horizontal-scroll">
-        <div class="sticky-container">
-            <div class="scroll-track">
-            <div class="project">
-                <figure class="panel-1"></figure>
-                <div class="project-info">
-                    <h3>Construcción de pisos</h3>
-                    <p>
-                    Con acabados pulidos, floteados y estampados
-                    </p>
+        <!-- Proyectos Showcase (Expanding Grid) -->
+        <section id="proyectos" class="solutions" aria-label="Proyectos Realizados">
+            <div class="container-solutions">
+                <div class="heading-container">
+                    <h2>Algunos de nuestros proyectos</h2>
+                </div>
+                <div class="grid-solutions-1">
+                    <article class="solution" tabindex="0">
+                        <figure class="solution-img" style="background-image: url('img/pisos-encanto.JPG');" aria-label="Obra Pisos Encanto"></figure>
+                        <div class="info">
+                            <h3>Obra Pisos Encanto</h3>
+                            <span class="solution-location">Estado de México</span>
+                            <span class="solution-year">2019</span>
+                        </div>
+                    </article>
+                    <article class="solution" tabindex="0">
+                        <figure class="solution-img" style="background-image: url('img/higa_2.jpg');" aria-label="Nave industrial Embalajes Duna"></figure>
+                        <div class="info">
+                            <h3>Nave Embalajes Duna</h3>
+                            <span class="solution-location">Estado de México</span>
+                            <span class="solution-year">2014</span>
+                        </div>
+                    </article>
+                    <article class="solution" tabindex="0">
+                        <figure class="solution-img" style="background-image: url('img/4-PISOS%20NAVE-OBRA%20METACERC.jpg');" aria-label="Nave industrial Metacerc"></figure>
+                        <div class="info">
+                            <h3>Nave Metacerc</h3>
+                            <span class="solution-location">Cuernavaca, Morelos</span>
+                            <span class="solution-year">2019</span>
+                        </div>
+                    </article>
+                    <article class="solution" tabindex="0">
+                        <figure class="solution-img" style="background-image: url('img/CIVAC-cuernavaca_pulido.jpg');" aria-label="Planta nueva Degasa"></figure>
+                        <div class="info">
+                            <h3>Planta nueva Degasa</h3>
+                            <span class="solution-location">Cuernavaca, Morelos</span>
+                            <span class="solution-year">2022</span>
+                        </div>
+                    </article>
+                    <article class="solution" tabindex="0">
+                        <figure class="solution-img" style="background-image: url('img/colusa-comercial_1.jpeg');" aria-label="Planta COLUSA Comercial"></figure>
+                        <div class="info">
+                            <h3>Planta COLUSA</h3>
+                            <span class="solution-location">Estado de México</span>
+                            <span class="solution-year">2019</span>
+                        </div>
+                    </article>
                 </div>
             </div>
-            <div class="project">
-                <figure class="panel-2"></figure>
-                <div class="project-info">
-                    <h3>Recubrimientos</h3>
-                    <p>
-                    Abrillantado de pisos y el recubrimiento epóxico
-                    </p>
-                </div>
-            </div>
-            <div class="project">
-                <figure class="panel-3"></figure>
-                <div class="project-info">
-                    <h3>Ababados de alta eficiencia</h3>
-                    <p>
-                    Sello de juntas, nivelación y más
-                    </p>
-                </div>
-            </div>
-            <div class="project">
-                <figure class="panel-4"></figure>
-                <div class="project-info">
-                    <h3>Pisos ecológicos</h3>
-                    <p>
-                    Concreto ecológico 100% permeable EcoCreto
-                    </p>
-                </div>
-            </div>
-            <div class="project">
-                <figure class="panel-5"></figure>
-                <div class="project-info">
-                    <h3>Pisos reforzados</h3>
-                    <p>
-                    Con uso de fibras de alto desempeño y Nanofibra
-                    </p>
-                </div>
-            </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-        <div class="p-1">
-            <h2>Menos problemas. Más resultados.</h2>
-            <p>
-                Nuestro respaldo son los resultados. A lo largo de los últimos años hemos desarrollado una gran cantidad de proyectos donde los hechos hablan por sí mismos.
-            </p>
-        </div>
-
-
-        <!-- footer -->
-
-        <section id="contacto" class="contact full-screen">
-            <div class="upper-side">
-                <div class="claim-2">
-                    Empezamos?
+        <!-- Soluciones Tecnocrea (Horizontal Scroll Track) -->
+        <section id="soluciones" class="horizontal-scroll" aria-label="Soluciones y Servicios">
+            <div class="title-2">
+                <h2>Soluciones Tecnocrea</h2>
+            </div>
+            <div class="sticky-container">
+                <div class="scroll-track">
+                    <article class="project">
+                        <figure class="project-panel" style="background-image: url('img/solucion--1.png');" aria-label="Construcción de pisos"></figure>
+                        <div class="project-info">
+                            <h3>Construcción de pisos</h3>
+                            <p>Con acabados pulidos, floteados y estampados de alta resistencia.</p>
+                        </div>
+                    </article>
+                    <article class="project">
+                        <figure class="project-panel" style="background-image: url('img/solucion--2.jpg');" aria-label="Recubrimientos epóxicos"></figure>
+                        <div class="project-info">
+                            <h3>Recubrimientos</h3>
+                            <p>Abrillantado de pisos y recubrimiento epóxico de alta protección química.</p>
+                        </div>
+                    </article>
+                    <article class="project">
+                        <figure class="project-panel" style="background-image: url('img/junta-4.png');" aria-label="Acabados de alta eficiencia"></figure>
+                        <div class="project-info">
+                            <h3>Acabados de alta eficiencia</h3>
+                            <p>Sello de juntas, cortes de control y nivelación láser milimétrica.</p>
+                        </div>
+                    </article>
+                    <article class="project">
+                        <figure class="project-panel" style="background-image: url('img/solucion--4.png');" aria-label="Pisos ecológicos permeables"></figure>
+                        <div class="project-info">
+                            <h3>Pisos ecológicos</h3>
+                            <p>Concreto ecológico 100% permeable EcoCreto amigable con el entorno.</p>
+                        </div>
+                    </article>
+                    <article class="project">
+                        <figure class="project-panel" style="background-image: url('img/solucion--5.jpeg');" aria-label="Pisos reforzados con nanofibra"></figure>
+                        <div class="project-info">
+                            <h3>Pisos reforzados</h3>
+                            <p>Refuerzo estructural con macrofibras sintéticas y nanofibras de alto desempeño.</p>
+                        </div>
+                    </article>
                 </div>
-                <hr class="divider--footer">
-                <div class="cont-info">
-                    <div class="info-left">
-                        <button class="btn-icon" onclick="window.location.href='index.html#top'">
-                            Regresa al inicio
-                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M11 8.325L5.4 13.925L4 12.5L12 4.5L20 12.5L18.6 13.925L13 8.325L13 20.5L11 20.5L11 8.325Z" fill="white"/>
-                            </svg>
-                        </button>
-                        <div class="info--left--cont">
-                            <div class="list">
+            </div>
+        </section>
+
+        <!-- Final Statement Banner -->
+        <section class="p-1" aria-label="Compromiso Tecnocrea">
+            <div class="p-1-container">
+                <h2>Menos problemas. Más resultados.</h2>
+                <p>
+                    Nuestro respaldo son los resultados tangibles. Desarrollamos obras donde la durabilidad, precisión y el apego a estándares industriales hablan por sí mismos.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer / Contact Section -->
+    <footer id="contacto" class="contact full-screen">
+        <div class="upper-side">
+            <h2 class="claim-2">¿Empezamos?</h2>
+            <hr class="divider--footer">
+            <div class="cont-info">
+                <div class="info-left">
+                    <button type="button" class="btn-icon btn-scroll-top" aria-label="Regresar al inicio de la página">
+                        Regresa al inicio
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11 8.325L5.4 13.925L4 12.5L12 4.5L20 12.5L18.6 13.925L13 8.325L13 20.5L11 20.5L11 8.325Z" fill="currentColor"/>
+                        </svg>
+                    </button>
+                    <div class="info--left--cont">
+                        <div class="list">
                             <h4>Redes</h4>
                             <ul>
-                                <li><a href="https://wa.me/5217228849933?text=Hola!%2C%20Me%20interesa%20una%20consulta!" target="_blank">
-                                    Whatsapp
-                            </a></li>
-                                <li><a href="https://www.facebook.com/TecnocreaMX" target="_blank">Facebook</a></li>
-                                <li><a href="https://www.linkedin.com/company/tecnocrea-mx/" target="_blank">LinkedIn</a></li>
+                                <li>
+                                    <a href="https://wa.me/5217228849933?text=Hola!%20Me%20interesa%20una%20consulta" target="_blank" rel="noopener noreferrer">
+                                        WhatsApp
+                                    </a>
+                                </li>
+                                <!-- <li>
+                                    <a href="https://www.facebook.com/TecnocreaMX" target="_blank" rel="noopener noreferrer">
+                                        Facebook
+                                    </a>
+                                </li> -->
+                                <li>
+                                    <a href="https://www.linkedin.com/company/pisos-tecnocrea" target="_blank" rel="noopener noreferrer">
+                                        LinkedIn
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                         <div class="list">
                             <h4>Ubicaciones</h4>
                             <ul>
-                                <li>EdoMex</li>
+                                <li>Estado de México</li>
                                 <li>Región del Bajío</li>
+                                <li>Cobertura Nacional</li>
                             </ul>
                         </div>
-                        </div>
-                    </div>
-                    <div class="info-right">
-                        <h4>Contacto</h4>
-                        <ul>
-                            <li><a href="mailto:pisostecnocrea@gmail.com">pisostecnocrea@gmail.com</a></li>
-                            <li><a href="#contact">Llámanos al +52 1 722 884 9933</a></li>
-                        </ul>
                     </div>
                 </div>
+                <div class="info-right">
+                    <h4>Contacto directo</h4>
+                    <ul>
+                        <li><a href="mailto:pisostecnocrea@gmail.com">pisostecnocrea@gmail.com</a></li>
+                        <li><a href="tel:+5217228849933">+52 1 722 884 9933</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="lower-side">
-                <a href="#contact">
-                    <svg class="logo-footer" width="487" height="61" viewBox="0 0 487 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+        </div>
+
+        <!-- Big Footer Logo Brand Link -->
+        <div class="lower-side">
+            <a href="#inicio" aria-label="Tecnocrea - Volver arriba">
+                <svg class="logo-footer" viewBox="0 0 487 61" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Tecnocrea">
                     <g clip-path="url(#clip0_175_3)">
-                    <path d="M163.318 61.4251V15.1201H174.108L199.659 45.946H194.562V15.1201H207.404V61.4251H196.614L171.063 30.5992H176.16V61.4251H163.318Z" fill="white"/>
-                    <path d="M134.24 62.3511C130.577 62.3511 127.179 61.7778 124.046 60.6312C120.957 59.4405 118.265 57.7647 115.97 55.6038C113.72 53.4429 111.955 50.9071 110.675 47.9965C109.395 45.0418 108.755 41.8005 108.755 38.2725C108.755 34.7445 109.395 31.5252 110.675 28.6146C111.955 25.6599 113.72 23.1021 115.97 20.9412C118.265 18.7803 120.957 17.1265 124.046 15.9799C127.179 14.7892 130.577 14.1938 134.24 14.1938C138.521 14.1938 142.338 14.9435 145.692 16.443C149.09 17.9424 151.914 20.1033 154.164 22.9257L145.824 30.4668C144.324 28.7028 142.669 27.3577 140.859 26.4316C139.094 25.5055 137.108 25.0425 134.902 25.0425C133.004 25.0425 131.261 25.3512 129.673 25.9686C128.084 26.586 126.716 27.49 125.569 28.6807C124.465 29.8273 123.583 31.2165 122.921 32.8482C122.303 34.4799 121.994 36.288 121.994 38.2725C121.994 40.257 122.303 42.0651 122.921 43.6968C123.583 45.3285 124.465 46.7397 125.569 47.9304C126.716 49.077 128.084 49.959 129.673 50.5764C131.261 51.1938 133.004 51.5025 134.902 51.5025C137.108 51.5025 139.094 51.0394 140.859 50.1133C142.669 49.1872 144.324 47.8422 145.824 46.0782L154.164 53.6193C151.914 56.3976 149.09 58.5585 145.692 60.102C142.338 61.6014 138.521 62.3511 134.24 62.3511Z" fill="white"/>
-                    <path d="M75.4018 33.0468H89.0438V42.837H75.4018V33.0468ZM76.3285 51.3042H100.556V61.4251H63.3545V15.1201H99.6951V25.241H76.3285V51.3042Z" fill="white"/>
-                    <path d="M18.9151 61.425V13.7767H0V0H55.1618V13.7767H36.3346V61.425H18.9151Z" fill="white"/>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M265.666 40.3011C264.889 52.094 255.453 61.5233 243.653 62.2995V52.5781C250.097 51.8539 255.213 46.7415 255.937 40.3011H265.666ZM265.666 37.1511C264.889 25.3583 255.453 15.929 243.653 15.1528V24.8742C250.097 25.5984 255.213 30.7108 255.937 37.1511H265.666ZM228.215 37.1511C228.94 30.7108 234.055 25.5984 240.501 24.8742V15.1528C228.699 15.929 219.263 25.3583 218.486 37.1511H228.215ZM218.486 40.3011C219.263 52.094 228.699 61.5233 240.501 62.2995V52.5781C234.055 51.8539 228.94 46.7415 228.215 40.3011H218.486Z" fill="white"/>
-                    <path d="M242.077 46.6011C246.429 46.6011 249.957 43.0753 249.957 38.7261C249.957 34.3768 246.429 30.8511 242.077 30.8511C237.725 30.8511 234.197 34.3768 234.197 38.7261C234.197 43.0753 237.725 46.6011 242.077 46.6011Z" stroke="white" stroke-width="2"/>
-                    <path d="M243.653 26.1262H240.501V51.3262H243.653V26.1262Z" fill="white"/>
-                    <path d="M229.468 37.151V40.301H254.685V37.151H229.468Z" fill="white"/>
-                    <path d="M302.235 62.3511C298.572 62.3511 295.174 61.7778 292.041 60.6312C288.952 59.4405 286.26 57.7647 283.965 55.6038C281.715 53.4429 279.949 50.9071 278.67 47.9965C277.39 45.0418 276.75 41.8005 276.75 38.2725C276.75 34.7445 277.39 31.5252 278.67 28.6146C279.949 25.6599 281.715 23.1021 283.965 20.9412C286.26 18.7803 288.952 17.1265 292.041 15.9799C295.174 14.7892 298.572 14.1938 302.235 14.1938C306.515 14.1938 310.333 14.9435 313.686 16.443C317.084 17.9424 319.909 20.1033 322.159 22.9257L313.819 30.4668C312.318 28.7028 310.663 27.3577 308.854 26.4316C307.089 25.5055 305.103 25.0425 302.897 25.0425C300.999 25.0425 299.256 25.3512 297.667 25.9686C296.079 26.586 294.711 27.49 293.563 28.6807C292.46 29.8273 291.578 31.2165 290.916 32.8482C290.298 34.4799 289.989 36.288 289.989 38.2725C289.989 40.257 290.298 42.0651 290.916 43.6968C291.578 45.3285 292.46 46.7397 293.563 47.9304C294.711 49.077 296.079 49.959 297.667 50.5764C299.256 51.1938 300.999 51.5025 302.897 51.5025C305.103 51.5025 307.089 51.0394 308.854 50.1133C310.663 49.1872 312.318 47.8422 313.819 46.0782L322.159 53.6193C319.909 56.3976 317.084 58.5585 313.686 60.102C310.333 61.6014 306.515 62.3511 302.235 62.3511Z" fill="white"/>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M330.039 62.351V16.676H361.56C370.229 16.676 376.533 21.401 376.533 30.0635C376.533 38.726 366.289 43.451 366.289 43.451L379.685 62.351H367.077L354.468 43.451H341.86V62.351H330.039ZM340.284 34.001V26.126H357.62C359.984 26.126 363.925 27.1622 363.925 30.0635C363.925 32.9648 359.984 34.001 357.62 34.001H340.284Z" fill="white"/>
-                    <path d="M399.613 33.9728H413.253V43.763H399.613V33.9728ZM400.539 52.2302H424.766V62.3511H387.565V16.0461H423.906V26.1671H400.539V52.2302Z" fill="white"/>
-                    <path d="M432.647 62.3511L453.101 16.0461H466.009L486.529 62.3511H472.893L456.874 22.4627H462.037L446.018 62.3511H432.647ZM443.834 53.3547L447.209 43.6968H469.848L473.224 53.3547H443.834Z" fill="white"/>
+                        <path d="M163.318 61.4251V15.1201H174.108L199.659 45.946H194.562V15.1201H207.404V61.4251H196.614L171.063 30.5992H176.16V61.4251H163.318Z" fill="currentColor"/>
+                        <path d="M134.24 62.3511C130.577 62.3511 127.179 61.7778 124.046 60.6312C120.957 59.4405 118.265 57.7647 115.97 55.6038C113.72 53.4429 111.955 50.9071 110.675 47.9965C109.395 45.0418 108.755 41.8005 108.755 38.2725C108.755 34.7445 109.395 31.5252 110.675 28.6146C111.955 25.6599 113.72 23.1021 115.97 20.9412C118.265 18.7803 120.957 17.1265 124.046 15.9799C127.179 14.7892 130.577 14.1938 134.24 14.1938C138.521 14.1938 142.338 14.9435 145.692 16.443C149.09 17.9424 151.914 20.1033 154.164 22.9257L145.824 30.4668C144.324 28.7028 142.669 27.3577 140.859 26.4316C139.094 25.5055 137.108 25.0425 134.902 25.0425C133.004 25.0425 131.261 25.3512 129.673 25.9686C128.084 26.586 126.716 27.49 125.569 28.6807C124.465 29.8273 123.583 31.2165 122.921 32.8482C122.303 34.4799 121.994 36.288 121.994 38.2725C121.994 40.257 122.303 42.0651 122.921 43.6968C123.583 45.3285 124.465 46.7397 125.569 47.9304C126.716 49.077 128.084 49.959 129.673 50.5764C129.673 51.1938 131.261 51.5025 134.902 51.5025C137.108 51.5025 139.094 51.0394 140.859 50.1133C142.669 49.1872 144.324 47.8422 145.824 46.0782L154.164 53.6193C151.914 56.3976 149.09 58.5585 145.692 60.102C142.338 61.6014 138.521 62.3511 134.24 62.3511Z" fill="currentColor"/>
+                        <path d="M75.4018 33.0468H89.0438V42.837H75.4018V33.0468ZM76.3285 51.3042H100.556V61.4251H63.3545V15.1201H99.6951V25.241H76.3285V51.3042Z" fill="currentColor"/>
+                        <path d="M18.9151 61.425V13.7767H0V0H55.1618V13.7767H36.3346V61.425H18.9151Z" fill="currentColor"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M265.666 40.3011C264.889 52.094 255.453 61.5233 243.653 62.2995V52.5781C250.097 51.8539 255.213 46.7415 255.937 40.3011H265.666ZM265.666 37.1511C264.889 25.3583 255.453 15.929 243.653 15.1528V24.8742C250.097 25.5984 255.213 30.7108 255.937 37.1511H265.666ZM228.215 37.1511C228.94 30.7108 234.055 25.5984 240.501 24.8742V15.1528C228.699 15.929 219.263 25.3583 218.486 37.1511H228.215ZM218.486 40.3011C219.263 52.094 228.699 61.5233 240.501 62.2995V52.5781C234.055 51.8539 228.94 46.7415 228.215 40.3011H218.486Z" fill="currentColor"/>
+                        <path d="M242.077 46.6011C246.429 46.6011 249.957 43.0753 249.957 38.7261C249.957 34.3768 246.429 30.8511 242.077 30.8511C237.725 30.8511 234.197 34.3768 234.197 38.7261C234.197 43.0753 237.725 46.6011 242.077 46.6011Z" stroke="currentColor" stroke-width="2"/>
+                        <path d="M243.653 26.1262H240.501V51.3262H243.653V26.1262Z" fill="currentColor"/>
+                        <path d="M229.468 37.151V40.301H254.685V37.151H229.468Z" fill="currentColor"/>
+                        <path d="M302.235 62.3511C298.572 62.3511 295.174 61.7778 292.041 60.6312C288.952 59.4405 286.26 57.7647 283.965 55.6038C281.715 53.4429 279.949 50.9071 278.67 47.9965C277.39 45.0418 276.75 41.8005 276.75 38.2725C276.75 34.7445 277.39 31.5252 278.67 28.6146C279.949 25.6599 281.715 23.1021 283.965 20.9412C286.26 18.7803 288.952 17.1265 292.041 15.9799C295.174 14.7892 298.572 14.1938 302.235 14.1938C306.515 14.1938 310.333 14.9435 313.686 16.443C317.084 17.9424 319.909 20.1033 322.159 22.9257L313.819 30.4668C312.318 28.7028 310.663 27.3577 308.854 26.4316C307.089 25.5055 305.103 25.0425 302.897 25.0425C300.999 25.0425 299.256 25.3512 297.667 25.9686C296.079 26.586 294.711 27.49 293.563 28.6807C292.46 29.8273 291.578 31.2165 290.916 32.8482C290.298 34.4799 289.989 36.288 289.989 38.2725C289.989 40.257 290.298 42.0651 290.916 43.6968C291.578 45.3285 292.46 46.7397 293.563 47.9304C294.711 49.077 296.079 49.959 297.667 50.5764C299.256 51.1938 300.999 51.5025 302.897 51.5025C305.103 51.5025 307.089 51.0394 308.854 50.1133C310.663 49.1872 312.318 47.8422 313.819 46.0782L322.159 53.6193C319.909 56.3976 317.084 58.5585 313.686 60.102C310.333 61.6014 306.515 62.3511 302.235 62.3511Z" fill="currentColor"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M330.039 62.351V16.676H361.56C370.229 16.676 376.533 21.401 376.533 30.0635C376.533 38.726 366.289 43.451 366.289 43.451L379.685 62.351H367.077L354.468 43.451H341.86V62.351H330.039ZM340.284 34.001V26.126H357.62C359.984 26.126 363.925 27.1622 363.925 30.0635C363.925 32.9648 359.984 34.001 357.62 34.001H340.284Z" fill="currentColor"/>
+                        <path d="M399.613 33.9728H413.253V43.763H399.613V33.9728ZM400.539 52.2302H424.766V62.3511H387.565V16.0461H423.906V26.1671H400.539V52.2302Z" fill="currentColor"/>
+                        <path d="M432.647 62.3511L453.101 16.0461H466.009L486.529 62.3511H472.893L456.874 22.4627H462.037L446.018 62.3511H432.647ZM443.834 53.3547L447.209 43.6968H469.848L473.224 53.3547H443.834Z" fill="currentColor"/>
                     </g>
                     <defs>
-                    <clipPath id="clip0_175_3">
-                    <rect width="487" height="61" fill="white"/>
-                    </clipPath>
+                        <clipPath id="clip0_175_3">
+                            <rect width="487" height="61" fill="white"/>
+                        </clipPath>
                     </defs>
-                    </svg>
-
-                </a>
-            </div>
-        </section>
-        <script>
-            const horizontalScroll = document.querySelector('.horizontal-scroll');
-            const scrollTrack = document.querySelector('.scroll-track');
-
-            window.addEventListener('scroll', () => {
-                const sectionTop = horizontalScroll.offsetTop;
-                const scrollY = window.scrollY;
-                const sectionHeight = horizontalScroll.offsetHeight;
-                const scrollDistance = scrollY - sectionTop;
-
-                if (scrollY >= sectionTop && scrollY <= sectionTop + sectionHeight) {
-                scrollTrack.style.transform = `translateX(-${scrollDistance}px)`;
-                }
-            });
-
-            // scroll
-            document.addEventListener("DOMContentLoaded", () => {
-                const menuLinks = document.querySelectorAll(".nav__link");
-                const sections = [...menuLinks].map(link =>
-                    document.querySelector(link.getAttribute("href"))
-                );
-
-                // Handle click → set active
-                menuLinks.forEach(link => {
-                    link.addEventListener("click", (e) => {
-                    menuLinks.forEach(l => l.classList.remove("active"));
-                    e.currentTarget.classList.add("active");
-                    });
-                });
-
-                // Handle scroll → update active based on viewport
-                window.addEventListener("scroll", () => {
-                    let current = "";
-
-                    sections.forEach(section => {
-                    if (!section) return;
-                    const sectionTop = section.offsetTop - 80; // adjust for nav height
-                    const sectionHeight = section.offsetHeight;
-
-                    if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
-                        current = section.getAttribute("id");
-                    }
-                    });
-
-                    menuLinks.forEach(link => {
-                    link.classList.remove("active");
-                    if (link.getAttribute("href") === `#${current}`) {
-                        link.classList.add("active");
-                    }
-                    });
-                });
-            });
-
-        </script>
-        <script>
-           const section = document.getElementById('scrollSection');
-            const boxes = document.querySelectorAll('.box');
-
-            window.addEventListener('scroll', () => {
-            const sectionTop = section.offsetTop;
-            const scrollY = window.scrollY;
-            const relativeScroll = scrollY - sectionTop;
-
-            // Reveal boxes staggered based on relative scroll position
-            boxes.forEach((box, i) => {
-                const revealPoint = window.innerHeight * (0.5 + i * 0.5); // adjust stagger
-                if (relativeScroll > revealPoint) {
-                box.classList.add('visible');
-                } else {
-                box.classList.remove('visible'); // Optional: reset when scrolling up
-                }
-            });
-    });
-    </script>
-    </body>
+                </svg>
+            </a>
+        </div>
+    </footer>
+</body>
 </html>
