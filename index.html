@@ -41,7 +41,28 @@
                 <img src="img/Logo-2025.svg" alt="Logotipo Tecnocrea" width="180" height="45">
             </a>
         </div>
+
+        <!-- Mobile Menu Toggle (hamburger / close) -->
+        <button type="button" class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileMenu">
+            <span class="nav-toggle__bar"></span>
+            <span class="nav-toggle__bar"></span>
+            <span class="nav-toggle__bar"></span>
+        </button>
     </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu" id="mobileMenu">
+        <nav aria-label="Navegación móvil">
+            <ul class="mobile-menu__list">
+                <li><a class="mobile-menu__link nav__link active" href="#inicio">Inicio</a></li>
+                <li><a class="mobile-menu__link nav__link" href="#nosotros">Nosotros</a></li>
+                <li><a class="mobile-menu__link nav__link" href="#proceso">Proceso</a></li>
+                <li><a class="mobile-menu__link nav__link" href="#proyectos">Proyectos</a></li>
+                <li><a class="mobile-menu__link nav__link" href="#soluciones">Soluciones</a></li>
+                <li><a class="mobile-menu__link nav__link" href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
 
     <main>
         <!-- Hero Section -->

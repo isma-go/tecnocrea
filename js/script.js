@@ -129,7 +129,47 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     /* --------------------------------------------------------------------------
-       4. SMOOTH SCROLL TO TOP & KEYBOARD ENHANCEMENT
+       4. MOBILE MENU (Hamburger Toggle & Full-Screen Overlay)
+       Reuses the desktop pill's `.nav__link` class on the overlay links so the
+       active-section observer above updates both in lockstep automatically.
+       -------------------------------------------------------------------------- */
+    const navToggle = document.getElementById('navToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    if (navToggle && mobileMenu) {
+        const closeMobileMenu = () => {
+            document.body.classList.remove('mobile-menu-open');
+            navToggle.setAttribute('aria-expanded', 'false');
+            navToggle.setAttribute('aria-label', 'Abrir menú');
+        };
+
+        const openMobileMenu = () => {
+            document.body.classList.add('mobile-menu-open');
+            navToggle.setAttribute('aria-expanded', 'true');
+            navToggle.setAttribute('aria-label', 'Cerrar menú');
+        };
+
+        navToggle.addEventListener('click', () => {
+            const isOpen = document.body.classList.contains('mobile-menu-open');
+            isOpen ? closeMobileMenu() : openMobileMenu();
+        });
+
+        // Closing on link click lets the anchor's smooth scroll play out
+        // against the page underneath instead of the menu overlay.
+        mobileMenu.querySelectorAll('.mobile-menu__link').forEach(link => {
+            link.addEventListener('click', closeMobileMenu);
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && document.body.classList.contains('mobile-menu-open')) {
+                closeMobileMenu();
+                navToggle.focus();
+            }
+        });
+    }
+
+    /* --------------------------------------------------------------------------
+       5. SMOOTH SCROLL TO TOP & KEYBOARD ENHANCEMENT
        -------------------------------------------------------------------------- */
     const scrollTopBtn = document.querySelector('.btn-scroll-top');
     if (scrollTopBtn) {
